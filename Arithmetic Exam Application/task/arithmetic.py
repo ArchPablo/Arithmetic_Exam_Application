@@ -33,7 +33,7 @@ def check_answer(task: str):
 
 def get_task(type_task: int):
     if type_task == 1:
-        _task = f"{r.randint(2, 9)} {r.choice(['-', '+', '*', '/'])} {r.randint(2, 9)}"
+        _task = f"{r.randint(2, 9)} {r.choice(['-', '+', '*'])} {r.randint(2, 9)}"
     else:
         _task = f"{r.randint(11, 29)} ** 2"
     return _task
